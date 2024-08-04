@@ -1,0 +1,21 @@
+batch_size_train: 256
+batch_size_test: 256
+
+queue_size: 4096
+momentum: 0.90
+eeg_dim: 128
+eye_dim: 256
+embed_dim: 64
+temp: 0.5
+k_test: 128
+
+alpha: 0.7
+warm_up: True
+
+optimizer: { opt: adamw, lr: 0.00001, weight_decay: 1e-3 }
+schedular: { sched: cosine, lr: 1e-5, epochs: 10, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 1, cooldown_epochs: 0 }
+
+
+
+
+
